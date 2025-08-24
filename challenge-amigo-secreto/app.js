@@ -34,15 +34,15 @@ function limpiarCaja(){
 
 
 function actualizarLista() {
-      // 1️⃣ Obtener el elemento UL donde irá la lista
+      //  Obtener el elemento UL donde irá la lista
       const lista = document.getElementById("listaAmigos");
 
-      // 2️⃣ Limpiar lista existente (evitar duplicados)
+      //  Limpiar lista existente (evitar duplicados)
       lista.innerHTML = "";
 
-      // 3️⃣ Iterar sobre el arreglo amigos
+      //  Iterar sobre el arreglo amigos
       for (let i = 0; i < amigos.length; i++) {
-        // 4️⃣ Crear un nuevo <li> para cada amigo
+        // Crear un nuevo <li> para cada amigo
         const li = document.createElement("li");
         li.textContent = amigos[i];
 
